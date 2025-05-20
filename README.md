@@ -30,11 +30,13 @@ The `Proof_of_Concept` directory provides all components required to complete th
 - Refer to the README file in `Proof_of_Concept` directory for detailed instructions and dependencies.
 
 ## Mitigation Recommendations
-- **Immediate Actions** 
+- **Immediate Actions**
+
 ✅ Disable RCM during seucre boot.
 ✅ Inject noise during AES operations.
 
-- **Long-Term Solutions**  
+- **Long-Term Solutions**
+  
 ✅ Add random delay injection in Boot ROM. 
 ✅ Redesign AES hardware module, Integrate masking or threshold implementation (TI) logic.
 
