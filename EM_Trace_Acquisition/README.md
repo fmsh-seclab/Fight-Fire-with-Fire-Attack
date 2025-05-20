@@ -17,3 +17,7 @@ Captured raw EM traces (18.5 ms @250 MS/s) were analyzed to identify the AES dec
 The red-marked segment (0.45 ms) in Figure below represents the firmware decryption process executed using the SBK. 
 <img src="./image/EM_Trace_250M_SBK_Decryption.png" width="1000"/>
 
+The red-marked segment (0.45 ms) in Figure 6 represents the firmware decryption process executed using the NV-MEK. 
+<img src="./image/EM_Trace_250M_NV_MEK_Decryption.png" width="1000"/>
+
+
