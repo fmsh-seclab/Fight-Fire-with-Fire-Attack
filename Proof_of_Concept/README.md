@@ -72,3 +72,5 @@ Key Recovery Results as follow:
   Decryption completed successfully!
   ......................................................
   ```
+## Validation
+Check whether the decrypted result  . Taking the MB1 firmware in `BSP version 32.4.2` as an example, some of its plaintext details are illustrated in the figure below.
