@@ -25,7 +25,6 @@ The `Proof_of_Concept` directory provides all components required to complete th
 - Result outputs (e.g., statistical reports and decrypted keys)
 
 **Important Notes**:
-- MB1 Encryption Key Ownership:
-  - Our PoC exclusively demonstrates a 100%-confidence-rate recovery of the SBK (Secure Boot Key).
-  - No implementation or data related to Nvidia’s proprietary MB1 encryption key is included, as ownership of this key resides solely with Nvidia.
-- Refer to the README file for detailed instructions and dependencies.
+- Our PoC exclusively demonstrates a 100%-confidence-rate recovery of the Secure Boot Key (SBK).
+- No implementation or data related to Nvidia’s proprietary MB1 encryption key (NV-MEK) is included, as ownership of this key resides solely with Nvidia.
+- Refer to the README file in `Proof_of_Concept` directory for detailed instructions and dependencies.
