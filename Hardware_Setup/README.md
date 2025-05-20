@@ -28,9 +28,8 @@ Carrier Board Optimization
 The SOM requires a carrier board for 5V VDD_IN power supply and I/O interface extension. Noise-generating components on the carrier board were removed to further improve SNR:
 - **Remove Non-Essential Components**: Only circuitry critical for basic SOM functions (e.g., USB communication, reset signal control, and RCM mode selection) was retained.
 - **Optimize Power Delivery**: The original 5V power supply (VDD_IN) was replaced with a clean 5V input from an E3631A DC power source to eliminate switching noise.
-<table>
-  <tr>
-    <td><img src="./image/som_back.JPG" width="400" /></td>
-    <td><img src="./image/som_front.JPG" width="400" /></td>
-  </tr>
-</table>
+
+<div style="display: flex; gap: 20px; justify-content: center">
+    <img src="./image/som_back.JPG" width="400" />
+    <img src="./image/som_front.JPG" width="400" />
+</div>
