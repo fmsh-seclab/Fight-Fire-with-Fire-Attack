@@ -5,7 +5,7 @@ Our investigation uncovered **Fight-Fire-with-Fire Attack**, a novel and unpatch
 
 This vulnerability has been reproduced and acknowledged by NVIDIA. In accordance with lawful vulnerability disclosure protocols, it has been assigned the CVE identifier **CVE-2025-286543**, and mitigation measures have been published. 
 
-For details, refer to: <https://www.nvidiasecurity.com>
+For details, refer to: <https://www.nvidia.com/en-us/security/>
 
 ## Structure Descriptions
 This repository is structured as follows:
