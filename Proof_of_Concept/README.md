@@ -21,9 +21,9 @@
   - 3. Runs the Python script `decrypt.py` to decrypt the encrypted MB1 files in `rcm_message/` with `SBK` and store to `decrypted_rcm_message/`.
 
 
-## OS and GPUs Requirements
+## OS Requirements for PoC
 - **`OS Requirements`**: Linux x86-64
-- **`Docker Image`**:<nvcr.io/nvidia/cuda:12.1.1-devel-ubuntu22.04> 
+- **`Docker Image`**: <nvcr.io/nvidia/cuda:12.1.1-devel-ubuntu22.04> 
 - **`Python Version`**: ≥ 3.8
 - **`GPU Requirements`**: 4 x Nvidia GPU (4 Nvidia L40S GPU or above)
 
