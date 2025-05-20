@@ -30,6 +30,6 @@ The SOM requires a carrier board for 5V VDD_IN power supply and I/O interface ex
 - **Optimize Power Delivery**: The original 5V power supply (VDD_IN) was replaced with a clean 5V input from an E3631A DC power source to eliminate switching noise.
 
 <div style="display: flex; gap: 20px; justify-content: center">
-    <img src="./image/som_back.JPG" width="600" />
-    <img src="./image/som_front.JPG" width="600" />
+    <img src="./image/som_back.JPG" width="500" />
+    <img src="./image/som_front.JPG" width="500" />
 </div>
