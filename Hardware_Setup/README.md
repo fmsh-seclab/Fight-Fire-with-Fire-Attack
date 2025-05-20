@@ -29,7 +29,6 @@ To minimize noise, non-essential components and their associated power ICs were 
     <img src="./image/som_front.JPG" width="500" />
 </div>
 
-
 **Carrier Board Optimization**
 
 The SOM requires a carrier board for 5V VDD_IN power supply and I/O interface extension. Noise-generating components on the carrier board were removed to further improve SNR:
