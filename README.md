@@ -18,7 +18,7 @@ This repository is structured as follows:
 
 - **`EM_Trace_Acquisition`**: Contains contains a guide for electromagnetic (EM) trace acquisition during the decryption of the MB1 firmware with SBK.
 
-- **`Proof_of_Concept`**: Contains all scripts, CUDA code, and EM trace datasets required to complete the Proof of Concept (PoC) validation.
+- **`Proof_of_Concept`**: Contains all scripts, CUDA source code, and EM trace datasets required to complete the Proof of Concept (PoC) validation.
 
 ## Reproduction Instructions
 Since side-channel attacks (SCA) rely on sophisticated hardware equipment, please carefully review the contents in the `EM_Trace_Acquisition` and `Hardware_Setup` folders before attempting reproduction.
@@ -26,7 +26,7 @@ Since side-channel attacks (SCA) rely on sophisticated hardware equipment, pleas
 The `Proof_of_Concept` directory provides all components required to complete the PoC, including:
 
 - Electromagnetic (EM) traces collected during our experiments
-- CUDA-accelerated Correlation Power Analysis (CPA) implementation
+- CUDA-accelerated Correlation Power Analysis (CPA) implementation (source code)
 - Result outputs (e.g., statistical reports and decrypted keys)
 
 **Important Notes**:
