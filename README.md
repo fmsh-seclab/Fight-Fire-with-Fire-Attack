@@ -9,9 +9,10 @@ For details, refer to: <https://www.nvidia.com/en-us/security/>
 
 ## Structure Descriptions
 This repository is structured as follows:
-- **`EM_Trace_Acquisition`**: Contains contains a guide for electromagnetic (EM) trace acquisition during the decryption of the MB1 firmware with SBK.
 
-- **`Hardware_Setup`**: Contains the hardware setup guide for the EM acquisition framework, which enables efficient and low-noise EM signal acquisition. 
+- **`Hardware_Setup`**: Contains the hardware setup guide for the EM acquisition framework, which enables efficient and low-noise EM signal acquisition.
+
+- **`EM_Trace_Acquisition`**: Contains contains a guide for electromagnetic (EM) trace acquisition during the decryption of the MB1 firmware with SBK.
 
 - **`Proof_of_Concept`**: Contains all scripts, CUDA code, and EM trace datasets required to complete the Proof of Concept (PoC) validation.
 
