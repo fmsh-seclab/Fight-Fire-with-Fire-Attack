@@ -11,11 +11,20 @@ For details, refer to: <https://www.nvidiasecurity.com>
 This repository is structured as follows:
 - **`EM_Trace_Acquisition`**: Contains contains a guide for electromagnetic (EM) trace acquisition during the decryption of the MB1 firmware with SBK.
 
-- **`Hardware_Setup`**: Contains the hardware setup guide for the electromagnetic (EM) acquisition framework, which enables efficient and low-noise electromagnetic (EM) signal acquisition. 
+- **`Hardware_Setup`**: Contains the hardware setup guide for the EM acquisition framework, which enables efficient and low-noise EM signal acquisition. 
 
-- **`Proof_of_Concept`**: Contains all scripts, CUDA code, and electromagnetic (EM) trace datasets required to complete the Proof of Concept (PoC) validation.
-  - **Notes**
-    - **OS Requirements**: Linux x86-64
-    - **Docker Image**: <nvcr.io/nvidia/cuda:12.1.1-devel-ubuntu22.04> 
-    - **Python Version**: ≥ 3.8
-    - **GPU Requirements**: 4 x Nvidia GPU
+- **`Proof_of_Concept`**: Contains all scripts, CUDA code, and EM trace datasets required to complete the Proof of Concept (PoC) validation.
+
+## Reproduction Instructions
+Since side-channel attacks (SCA) rely on sophisticated hardware equipment, please carefully review the contents in the `EM_Trace_Acquisition` and `Hardware_Setup` folders before attempting reproduction.
+
+The `Proof_of_Concept` directory provides all components required to complete the PoC, including:
+
+- Electromagnetic (EM) traces collected during our experiments
+- CUDA-accelerated Correlation Power Analysis (CPA) implementation
+- Result outputs (e.g., statistical reports and decrypted keys)
+**Important Notes**:
+- MB1 Encryption Key Ownership:
+  - Our PoC exclusively demonstrates a 100%-confidence-rate recovery of the SBK (Secure Boot Key).
+  - No implementation or data related to Nvidia’s proprietary MB1 encryption key is included, as ownership of this key resides solely with Nvidia.
+- Refer to the README file for detailed instructions and dependencies.
