@@ -75,7 +75,8 @@ Key Recovery Results as follow:
 ## Validation
 Check whether the decrypted result  . Taking the MB1 firmware in `BSP version 32.4.2` as an example, some of its plaintext details are illustrated in the figure below.
 
-## Appendix A RSA and AES Key Information
+## Appendix A 
+### RSA and AES Key Information
 - **SBK file**: *sbkfile*
   ```
   0x000102030405060708090a0b0c0d0e0f
@@ -111,7 +112,8 @@ Check whether the decrypted result  . Taking the MB1 firmware in `BSP version 32
   -----END RSA PRIVATE KEY-----
   ```
   
-## Appendix B TRS File Format Specification
+## Appendix B 
+### TRS File Format Specification
 #### **1. Overview**
 The **TRS file** (Trace Storage Format) is a structured binary format designed by **Riscure** for storing traces acquired during side-channel analysis. A TRS file consists of a *header* containing metadata followed by sequential *trace records* storing acquisition data.
 
