@@ -23,6 +23,7 @@ The `Proof_of_Concept` directory provides all components required to complete th
 - Electromagnetic (EM) traces collected during our experiments
 - CUDA-accelerated Correlation Power Analysis (CPA) implementation
 - Result outputs (e.g., statistical reports and decrypted keys)
+
 **Important Notes**:
 - MB1 Encryption Key Ownership:
   - Our PoC exclusively demonstrates a 100%-confidence-rate recovery of the SBK (Secure Boot Key).
