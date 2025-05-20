@@ -31,12 +31,12 @@ The `Proof_of_Concept` directory provides all components required to complete th
 
 ## Mitigation Recommendations
 - **Immediate Actions**
-  ✅ Disable RCM during seucre boot.
-  ✅ Inject noise during AES operations.
+  - ✅Disable RCM during seucre boot.
+  - ✅ Inject noise during AES operations.
 
 - **Long-Term Solutions**
-  ✅ Add random delay injection in Boot ROM. 
-  ✅ Redesign AES hardware module, Integrate masking or threshold implementation (TI) logic.
+  - ✅ Add random delay injection in Boot ROM. 
+  - ✅ Redesign AES hardware module, Integrate masking or threshold implementation (TI) logic.
 
 ## License
 All the files within this repository is AGPL-3.0 licensed, as found in the LICENSE file.
