@@ -21,8 +21,8 @@ This File describes the hardware modifications and measurement setup necessary t
 To minimize noise, non-essential components and their associated power ICs were removed. The following steps were taken:
 - **Disable DRAM**: The power ICs (marked in yellow in Figure 1) supplying 0.6V and 1.8V to the DRAM were removed.
 - **Eliminate CPU/GPU Power IC**: The power IC responsible for the VDD_CPU_GPU rail (marked in green in Figure 1) was removed.
-- **Remove Additional Components**: Components such as level shifters, eMMC, Flash, Ethernet interface ICs, and power monitoring ICs were also removed (marked with red crosses in Figure 1).
-- **Replace VDD_CORE Power Supply**: The DC-DC converter in the VDD_CORE rail associated with the Boot and Power Management Processor (BPMP) was replaced with a lower-noise power supply. A 0.85V input was directly supplied using an Agilent E3631A DC power supply (highlighted in Figure above).
+- **Remove Additional Components**: Components such as level shifters, eMMC, Flash, Ethernet interface ICs, and power monitoring ICs were also removed (marked with red crosses in the left side of the image below).
+- **Replace VDD_CORE Power Supply**: The DC-DC converter in the VDD_CORE rail associated with the Boot and Power Management Processor (BPMP) was replaced with a lower-noise power supply. A 0.85V input was directly supplied using an Agilent E3631A DC power supply (highlighted in the right side of the image below).
 
 Carrier Board Optimization
 The SOM requires a carrier board for 5V VDD_IN power supply and I/O interface extension. Noise-generating components on the carrier board were removed to further improve SNR:
