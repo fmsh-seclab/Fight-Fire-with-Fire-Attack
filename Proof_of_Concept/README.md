@@ -23,7 +23,7 @@
 
 ## OS and GPUs Requirements
 - **`OS Requirements`**: Linux x86-64
-- **`Docker Image`**: <nvcr.io/nvidia/cuda:12.1.1-devel-ubuntu22.04> 
+- **`Docker Image`**:<nvcr.io/nvidia/cuda:12.1.1-devel-ubuntu22.04> 
 - **`Python Version`**: ≥ 3.8
 - **`GPU Requirements`**: 4 x Nvidia GPU (4 Nvidia L40S GPU or above)
 
