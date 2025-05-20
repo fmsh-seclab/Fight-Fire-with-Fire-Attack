@@ -20,4 +20,11 @@ The red-marked segment (0.45 ms) in Figure below represents the firmware decrypt
 The red-marked segment (0.45 ms) in Figure 6 represents the firmware decryption process executed using the NV-MEK. 
 <img src="./image/EM_Trace_250M_NV_MEK_Decryption.png" width="1000"/>
 
+## AES Operational Characterization
+The trace set `EM_Trace_SBK_Decryption.trs` in folder `Proof_of_Concept\EM_Trace` correspond to the electromagnetic signals captured when the TOE completed decryption using the SBK key.
+<img src="./image/EM_Trace_5G_SBK_Decryption.png" width="1000"/>
 
+Upon detailed analysis of the trace's zoomed segments, the unique "fingerprint" of each individual AES block decryption are clearly identifiable. 
+The tall peaks marked in red (significantly higher than surrounding peaks) indicate the start of each decryption operation. 
+A single AES-128 block decryption process consistently spans 12 clock cycles (see Figure below for zoom-scale visualization).
+<img src="./image/EM_Trace_5G_SBK_Decryption_Detals.png" width="1000"/>
