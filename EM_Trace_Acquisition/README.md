@@ -15,5 +15,5 @@ To identify the optimal location for EM signal capture, multiple positions on th
 ## Decryption Operations
 Captured raw EM traces (18.5 ms @250 MS/s) were analyzed to identify the AES decryption window through distinct repetitive patterns. 
 The red-marked segment (0.45 ms) in Figure below represents the firmware decryption process executed using the SBK. 
-<img src="./image/EM_Trace_250M_SBK_Decryption.png" width="800"/>
+<img src="./image/EM_Trace_250M_SBK_Decryption.png" width="1000"/>
 
