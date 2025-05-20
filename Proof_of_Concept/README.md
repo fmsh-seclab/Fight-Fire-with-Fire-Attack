@@ -19,14 +19,16 @@
   - 1. Compiles `jetson_32bit_cpa.cu` into an executable `jetson_32bit_cpa`.
   - 2. Runs the CUDA program `jetson_32bit_cpa` and output `SBK` value to `Result.txt`.
   - 3. Runs the Python script `decrypt.py` to decrypt the encrypted MB1 files in `rcm_message/` with `SBK` and store to `decrypted_rcm_message/`.
-  
-## OS and GPUs Requirements
-- **OS Requirements**: Linux x86-64
-- **Docker Image**: <nvcr.io/nvidia/cuda:12.1.1-devel-ubuntu22.04> 
-- **Python Version**: ≥ 3.8
-- **GPU Requirements**: 4 x Nvidia GPU (4 Nvidia L40S GPU or above)
 
-## Usage 
+
+## OS and GPUs Requirements
+- **`OS Requirements`**: Linux x86-64
+- **`Docker Image`**: <nvcr.io/nvidia/cuda:12.1.1-devel-ubuntu22.04> 
+- **`Python Version`**: ≥ 3.8
+- **`GPU Requirements`**: 4 x Nvidia GPU (4 Nvidia L40S GPU or above)
+
+
+## PoC Usage 
 ```bash
 chmod +x POC.sh    # Grant execute permissions
 ./POC.sh           # Run the script
