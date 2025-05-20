@@ -14,11 +14,8 @@ To identify the optimal location for EM signal capture, multiple positions on th
 
 ## Decryption Operations
 Captured raw EM traces (18.5 ms @250 MS/s) were analyzed to identify the AES decryption window through distinct repetitive patterns. 
-- The red-marked segment (0.45 ms) in Figure below represents the firmware decryption process executed using the SBK. 
+The red-marked segment (0.45 ms) in Figure below represents the firmware decryption process executed using the SBK. 
   <img src="./image/EM_Trace_250M_SBK_Decryption.png" width="1000"/>
-
-- The red-marked segment (0.45 ms) in Figure 6 represents the firmware decryption process executed using the NV-MEK. 
-  <img src="./image/EM_Trace_250M_NV_MEK_Decryption.png" width="1000"/>
 
 ## AES Operational Characterization
 The trace set `EM_Trace_SBK_Decryption.trs` in folder `Proof_of_Concept\EM_Trace` correspond to the electromagnetic signals captured when the TOE completed decryption using the SBK key.
