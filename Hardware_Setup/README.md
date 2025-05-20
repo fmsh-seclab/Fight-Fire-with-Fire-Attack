@@ -13,9 +13,7 @@ This File describes the hardware modifications and measurement setup necessary t
 
 6. **Embedded Development Board**: A Jetson-based kit bridges the workstation and TOE, handling USB data relay, SoC reset operations and oscilloscope trigger synchronization.
 
-<div style="text-align:center">
-<img src="./image/setup.svg" width="800" />
-</div>
+<img src="./image/setup.svg" width="600" />
 
 ## Hardware Modifications for Low-Noise System
 To minimize noise, non-essential components and their associated power ICs were removed. The following steps were taken:
