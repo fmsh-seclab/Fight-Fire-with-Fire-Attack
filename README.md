@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./Logo.png" width="80%" />
+  <img src="./Logo.png" width="50%" />
 </div>
 
 # Fight-Fire-with-Fire-Attack
