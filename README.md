@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./logo.png" width="100%" />
+  <img src="./Logo.png" width="100%" />
 </div>
 # Fight-Fire-with-Fire-Attack
 This repository contains the artifact for our paper "**Classical Attacks, Modern Targets:Side-Channel Compromises Secure Boot Key in NVIDIA Jetson Edge AI**" published at NDSS 2026.
