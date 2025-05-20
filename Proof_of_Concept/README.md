@@ -74,6 +74,43 @@ Key Recovery Results as follow:
   ```
 ## Validation
 Check whether the decrypted result  . Taking the MB1 firmware in `BSP version 32.4.2` as an example, some of its plaintext details are illustrated in the figure below.
+
+## RSA and AES Key Information
+- **SBK file**: *sbkfile*
+  ```
+  0x000102030405060708090a0b0c0d0e0f
+  ```
+- **RSA Key file**: *rsa_priv_2048.pem*   
+  ```
+  -----BEGIN RSA PRIVATE KEY-----
+  MIIEowIBAAKCAQEA1h3uuDTqMElg0IFU6RKi/GcyL7qJgUqr4x/t5o+tQKm8Fj9g
+  D3EVXWlHwrgtxnfOuCGWfeDn3QIZvm8FlL0jvwLkFb58oZ0wA56+qZKnJFbfbnFu
+  0nxi64HMDCFBAgtK+6a99ZHogXTCxz/umkrTeoNI9suWljzzJeJIWk4KFpzOtX/H
+  iNOfVujEoz+P0wFstZZVaJEGYFWFulZXnpy/I0wAlR6UIWzREQOnwA8N5UWUPSdK
+  RNL05f/ZXVwaZZmkKzCe7t0wvzHforYuiVLLmUtDw2P2RlKY0iZ7d/WwCvnCCIck
+  yjrF1h/O3g6kmRlSfQwW2k4o6yTWHEApbU/doQIDAQABAoIBAH5Don2gPqYA74Wl
+  buQO6Gw9krvQnbvPw/Mo5gq7mWhzb4YTE1unzPiL2BR8tgm+pvmwXOWYVkLfNT02
+  jSz8KHNAii5EaYyIfEL2PusSn1vvmsyvObIIRfEpVqGkjohdDne+CXEh/OEycJY9
+  HkCAdZtehg17Wy73fE9P1GjkclCITWCasDJpqMw4k/iDM44H6u+ZSBeZRMmLkAYz
+  gY4YeSsPkJGkfUXQXpbvjsyO6tHeTYqUn0v/hFD+zf6hC7/TCE+3OsjjEQH1CYZj
+  +Tm95l/+5c/gJ+UR030T1EydBzfzO2RjbYL5GNUH/knQRwbC/rwZB6oj5Yg/VUss
+  ZyGUbV0CgYEA9qVEa0MdtdTRgp9SP7EyfdxPXoOJA9xJ6GA8uVinMKpwpr86wO5L
+  q1+8BDjaj2MnRN1mtzENzBOezilAYfwRyiInLsu2ggC+hpn7yStZF5DbLbgJ4WWl
+  zA5hVb4dxp4oUrfCiBJWRB9nD8Yytp1tCblp4sZVaxz1S1keppPt7IcCgYEA3jzW
+  fZc1FFVgP0JWdn9ANGJ62kykdf6HTUuOhyNZKtluRmYuchGzQg+yvQKX4Qkzt19d
+  8W7OSr1+HDYU/OEdwoc3COTaUjZaNM+XoPqYBHnprAcc2auZJ+R9qHSX5DLmpkBX
+  b2MiPNKcMCJQkuAi+jqOkI4s2TOZ12LP/lJcVpcCgYEArXYfvzwNihLpYe9AvhCW
+  DRRDMZpaYz+rLuV373Zc5woHfg4heQxeZWFH7sQ5WfyG4pS/J3k1VeA6oI08fWz0
+  6e7JFc0pRxbU5/8lqB53Yu56ZxX2xPFjADbg15eEg2o5u6sHAgG7b9+R8PMYOXxP
+  8jXXNSj9a/6KuPotZ0PEYcMCgYBOU27dUL+abQTBBuZmWS8Nx2+5JK4KEC0rpueS
+  5Xh1y7A8C6Nu/KILNHEwgIt6+r1JcckwYHdAjEy4MK9w+P5+Ix3YeqAfvZxJZKjy
+  SZ/uY/FhehhG913BW5yWFJG8EdyM17x5O51Dho8Zv95aBbkOLDk25YUVAETGTsMz
+  xV9Z/QKBgA6bSiZ4OFfluTxzBGA7hTj+jcUGXIiNzKU09H74CDxvLZ0E1gTLPVZY
+  oGW3UB8w09gHUsnjyXnG1GDBKylrt8U+eYu7n8LxIs3xMp99xf5l/ioa9pnkkDE1
+  wAt2HKCTiwsWh5khSOGnU3Ie9vx+4fItPHFC6LX/N44HDvpU82up
+  -----END RSA PRIVATE KEY-----
+  ```
+  
 ## TRS File Format Specification
 #### **1. Overview**
 The **TRS file** (Trace Storage Format) is a structured binary format designed by **Riscure** for storing traces acquired during side-channel analysis. A TRS file consists of a *header* containing metadata followed by sequential *trace records* storing acquisition data.
