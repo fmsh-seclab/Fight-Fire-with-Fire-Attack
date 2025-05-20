@@ -3,7 +3,7 @@
 ## EM Signal Acquisition
 To identify the optimal location for EM signal capture, multiple positions on the TOE were tested using probes of various shapes. The `Langer EMV RF-R 3-2` probe positioned at the location indicated in Figure below captured distinctive signals. These signals were closely correlated with the TOE's signature verification and firmware decryption operations.
 
-<img src="./image/Probe.JPG" width="500"/>
+<img src="./image/Probe.JPG" width="800"/>
 
 ## Oscilloscope Parameters
 
