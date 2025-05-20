@@ -31,8 +31,9 @@ The `Proof_of_Concept` directory provides all components required to complete th
 
 **Important Notes**:
 - Our PoC exclusively demonstrates a 100%-confidence-rate recovery of the `Secure Boot Key (SBK)`.
-- No implementation or data related to `Nvidia’s proprietary MB1 encryption key (NV-MEK)` is included, as ownership of this key resides solely with Nvidia.
+- No implementation or data related to `Nvidia’s proprietary MB1 encryption key (NV-MEK)` is included here, as ownership of this key resides solely with Nvidia.
 - Refer to the `README` in `Proof_of_Concept` directory for detailed instructions and dependencies.
+- To prevent potential misuse of certain core code components, after completing the NDSS 2026 artifact evaluation process, we will not providing the source code of the GPU-accelerated 32-bit CPA attack implementation. Instead, we will release a compiled binary executable program to researchers.
 
 ## Mitigation Recommendations
 - **Immediate Actions**
