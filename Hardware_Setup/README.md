@@ -10,7 +10,7 @@ This File describes the hardware modifications and measurement setup necessary t
 
 5. **Oscilloscope**: A Lecroy 625Zi oscilloscope recorded the amplified signals.
 
-6. **Embedded Development Board**: A Jetson-based kit controlled the TOE's SYS_RESET pin and generated synchronized trigger signals for the oscilloscope.
+6. **Embedded Development Board**: A Jetson-based kit bridges the workstation and TOE, handling USB data relay, SoC reset operations and oscilloscope trigger synchronization.
 
 <div style="text-align:center">
 <img src="./image/setup.svg" alt="probe" style="zoom:10%; display: block; margin: 0 auto;" /></div>
