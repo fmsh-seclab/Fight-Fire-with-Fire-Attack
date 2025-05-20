@@ -29,7 +29,12 @@ The tall peaks marked in red (significantly higher than surrounding peaks) indic
 A single AES-128 block decryption process consistently spans 12 clock cycles (see Figure below for zoom-scale visualization).
 <img src="./image/EM_Trace_5G_SBK_Decryption_Detals.png" width="1000"/>
 
-## Single-Block Waveforms Extraction
+## Waveforms Extraction and Known-Key Correlation
 Each AES-128 block decryption waveform must be extracted and assembled into a trace set to perform Correlation Power Analysis.
 <img src="./image/EM_Trace_5G_SBK_Decryption_SingleBlock.jpg" width="1000"/>
+The validity of the leakage model can be confirmed using known-key correlation analysis when the encryption key is known.
+<img src="./image/EM_Trace_5G_SBK_Decryption_SingleBlock_Correlation_Result.png" width="1000"/>
+- Results：
+  - Peak correlation ρ=0.057 funded at the peak of the 2nd clock cycle (marked in red in Figure above, 128-bit correlation result).
+  - Confirmed linear relationship between EM amplitude and $\Delta_{\text{R}^{(1)},\text{R}^{(2)}}$ magnitude.
 
