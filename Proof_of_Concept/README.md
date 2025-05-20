@@ -74,3 +74,65 @@ Key Recovery Results as follow:
   ```
 ## Validation
 Check whether the decrypted result  . Taking the MB1 firmware in `BSP version 32.4.2` as an example, some of its plaintext details are illustrated in the figure below.
+## TRS File Format Specification
+#### **1. Overview**
+The **TRS file** (Trace Storage Format) is a structured binary format designed by **Riscure** for storing traces acquired during side-channel analysis. A TRS file consists of a *header* containing metadata followed by sequential *trace records* storing acquisition data.
+
+
+#### **2. TRS File Structure**
+The file is composed of two main sections:
+
+```
+┌──────────────┬───────────────────────────────────────────────────────────┐
+│  TRS Header  │  Trace 1 │ Trace 2 │ ... │ Trace N  │  Optional Footer     │
+└──────────────┴───────────────────────────────────────────────────────────┘
+```
+
+##### **2.1 Header Format**
+The header contains mandatory and optional tag-value fields in the following structure:
+
+| Tag (Hex) | Name      | Data Type   | Description                          | **Binary Example** | Example Value |
+|-----------|-----------|-------------|--------------------------------------|:---------------|-----------|
+| **0x41**  | NT        | uint32 (LE) | Number of traces in the file         | `41 04 08 00 00 00` | NT = `0x00000008` |
+| **0x42**  | NS        | uint32 (LE) | Number of samples per trace          | `42 04 F0 7D 23 00` | NS = `0x00237DF0` |
+| **0x43**  | SC        | uint8       | Sample coding:<br>• BIT5: `1`=float, `0`=int<br>• BIT0-1: Bytes per sample `(1 << n)` | `43 01 01` | SC = `0x01` (1 bytes) |
+| **0x44**  | DS        | uint16 (LE) | Data block length (bytes per trace)  | `44 02 10 00` | DS = `0x0010` |
+| **0x45**  | RS        | uint8       | Reserved title space size (bytes)    | `45 01 29` | RS = `0x29` |
+| **0x5F00**    | TB        | N/A         | Marks the end of the header block    | /             | / |
+
+*Notes*:
+
+1. Tags **0x41**, **0x42**, and **0x43** are **mandatory**.
+2. All multi-byte integers use **little-endian** encoding.
+
+##### **2.2 Trace Record Structure**
+Each trace record contains three components, structured as:
+
+```
+┌────────────────────────┬───────────────────────┬────────────────────────┐
+│ Title Space (RS bytes) │ Data Block (DS bytes) │ Sample Block (NS×SC)   │
+└────────────────────────┴───────────────────────┴────────────────────────┘
+```
+
+- **Title Space** (Size: Defined by **0x45** tag)
+  Reserved for trace-specific metadata or labels. Empty space is filled with `0x20` padding.
+  *Example*: `0x74726163652020...2020` decodes to "trace".
+
+- **Data Block** (Size: Defined by **0x44** tag)
+  Contains auxiliary data associated with the trace (e.g., cryptographic inputs/outputs).
+
+- **Sample Block** (Size: **NS × Bytes per sample**)
+  Raw sample data in the format specified by **0x43** (SC):
+  - For `int32`: Signed 4-byte integer.
+  - For `byte8`: Signed 1-byte integer.
+
+#### **3. Validation Requirements**
+| Check                 | Criteria                                                     |
+| --------------------- | ------------------------------------------------------------ |
+| File Size Consistency | `NT × (RS + DS + NS×BytesPerSample) + HeaderSize ≈ Actual File Size` |
+| NS Threshold          | Values exceeding 200,000,000 trigger warnings (potential scope configuration errors). |
+
+#### **4. Vendor Extensions**
+Undocumented tags (e.g., `0x49`, `0x4A`) may indicate vendor-specific extensions. Validate against hardware documentation.
+
+---
