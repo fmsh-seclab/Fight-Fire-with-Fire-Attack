@@ -37,8 +37,9 @@
 
 
 ## Usage Instruction
+Copy all contents from the `Proof_of_Concept` folder to your desired directory, and ensure read, write, and execute permissions are granted for the files.
+
 ```bash
-chmod +x POC.sh    # Grant execute permissions
 ./POC.sh           # Run the script
 ```
 ## Key Recovery Result
