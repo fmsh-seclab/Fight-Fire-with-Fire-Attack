@@ -75,7 +75,10 @@ Key Recovery Results as follow:
 ## Validation Result
 Confirm that the decrypted result is identical to the original unencrypted file. For instance, the MB1 firmware in `BSP version 32.4.2` was successfully decrypted, with its output perfectly matching the original unaltered payload.
 
-<img src="./Validation Result.PNG" width="1500" />
+<div style="display: flex; gap: 20px; justify-content: center">
+    <img src="./Original_MB1.PNG" width="500" />
+    <img src="./Decrypted_MB1.PNG" width="500" />
+</div>
 
 ## Appendix A 
 
