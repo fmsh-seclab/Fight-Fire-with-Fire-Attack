@@ -47,6 +47,7 @@ if not os.path.isdir(rcm_folder):
 for filename in os.listdir(rcm_folder):
     if not filename.endswith('.rcm'):
         continue
+    
     base_name = os.path.splitext(filename)[0]
     
     name_parts = base_name.split('_', 1)
@@ -56,7 +57,7 @@ for filename in os.listdir(rcm_folder):
     else:
         modified_base = base_name  
     
-    output_name = f'decrypted_{modified_base}.bin' 
+    output_name = f'decrypted_{modified_base}.bin'
     
     try:
         with open(os.path.join(rcm_folder, filename), 'rb') as f:

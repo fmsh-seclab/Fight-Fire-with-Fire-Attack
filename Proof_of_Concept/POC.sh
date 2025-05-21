@@ -108,7 +108,6 @@ function main() {
     local SCRIPT_DIR
     SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
     "$PYTHON_CMD" "$SCRIPT_DIR/decrypt.py"
-    echo "Decryption completed successfully!"
     echo "......................................................"
 }
 
