@@ -2,7 +2,7 @@
   <img src="./Logo.png" width="50%" />
 </div>
 
-# Fight-Fire-with-Fire-Attack
+# Fight-Fire-with-Fire Attack
 This repository contains the artifact for our paper "**Classical Attacks, Modern Targets:Side-Channel Compromises Secure Boot Key in NVIDIA Jetson Edge AI**" submited to NDSS 2026.
 
 Our investigation uncovered **Fight-Fire-with-Fire Attack**, a novel and unpatchable vulnerability in the Nvidia Jetson Xavier NX SoC, which enabling `Secure Boot key (SBK)` and `Nvidia's MB1 Encryption Key (NV-MEK)` recovery through GPU-accelerated 32-bit correlation power analysis (CPA) within 10 hours.
