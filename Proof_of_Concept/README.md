@@ -76,8 +76,11 @@ Key Recovery Results as follow:
 Confirm that the decrypted result is identical to the original unencrypted file. For instance, the MB1 firmware in `BSP version 32.4.2` was successfully decrypted, with its output perfectly matching the original unaltered payload.
 
 ## Appendix A 
+
 ### RSA and AES Key Information
+
 We use the following keys to generate the RCM message for the Proof-of-Concept (PoC) process. The generated files are stored in the `rcm_message` directory.
+
 - **SBK file**: *sbkfile*
   ```
   0x000102030405060708090a0b0c0d0e0f
