@@ -1,6 +1,6 @@
 # Hardware Setup Guide
 ## Measurement Setup Introduction
-This File describes the hardware modifications and measurement setup necessary to minimize system noise and capture electromagnetic (EM) signals effectively. The goal is to improve the signal-to-noise ratio (SNR) for precise side-channel analysis of the NVIDIA Jetson Xavier NX SOM during firmware decryption. The EM measurement setup was designed to capture transient electromagnetic signals generated during the decryption of the MB1 firmware. The following components and configuration were used:
+This file describes the hardware modifications and measurement setup necessary to minimize system noise and capture electromagnetic (EM) signals effectively. The goal is to improve the signal-to-noise ratio (SNR) for precise side-channel analysis of the NVIDIA Jetson Xavier NX SOM during firmware decryption. The EM measurement setup was designed to capture transient electromagnetic signals generated during the decryption of the MB1 firmware. The following components and configuration were used:
 1. **Target of Evaluation (TOE)**: NVIDIA Jetson Xavier NX SOM, connected to a modified carrier board.
 
 2. **Power Supplies**: Two Agilent E3631A DC power supplies provided clean 5V (VDD_IN) and 0.85V (VDD_CORE) inputs.
