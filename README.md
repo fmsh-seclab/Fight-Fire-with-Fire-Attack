@@ -38,7 +38,7 @@ The `Proof_of_Concept` directory provides all components required to complete th
   - ✅ Add random delay injection in Boot ROM. 
   - ✅ Redesign AES hardware module, Integrate masking or threshold implementation (TI) logic.
 
-## Important Notes**:
+## Important Notes
 - Our PoC exclusively demonstrates a 100%-confidence-rate recovery of the `Secure Boot Key (SBK)`.
   
 - No implementation or data related to `Nvidia’s proprietary MB1 encryption key (NV-MEK)` is included here, as ownership of this key resides solely with Nvidia.
