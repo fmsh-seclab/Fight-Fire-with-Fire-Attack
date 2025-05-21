@@ -79,7 +79,7 @@ Confirm that the decrypted result is identical to the original unencrypted file.
 
 ### RSA and AES Key Information
 
-We use the following keys to generate the RCM message for the Proof-of-Concept (PoC) process. The generated files are stored in the `rcm_message` directory.
+We use the following keys to generate the RCM message for the PoC process. The generated files are stored in the `rcm_message` directory.
 
 - **sbkfile**:
   ```
