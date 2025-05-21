@@ -18,7 +18,7 @@ The red-marked segment (0.45 ms) in Figure below represents the firmware decrypt
   <img src="./image/EM_Trace_250M_SBK_Decryption.png" width="1000"/>
 
 ## AES Operational Characterization
-The trace set `EM_Trace_SBK_Decryption.trs` in folder `Proof_of_Concept\EM_Trace` correspond to the electromagnetic signals captured when the TOE completed decryption using the SBK key.
+The trace set `EM_Trace_SBK_Decryption.trs` in folder `Proof_of_Concept\EM_Trace` correspond to the electromagnetic signals captured when the SoC completed decryption using the SBK key.
 <img src="./image/EM_Trace_5G_SBK_Decryption.png" width="1000"/>
 
 Upon detailed analysis of the trace's zoomed segments (**averaging trace**), the unique "fingerprint" of each individual AES block decryption are clearly identifiable. 
