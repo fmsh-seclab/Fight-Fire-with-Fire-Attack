@@ -11,7 +11,7 @@ key1 = bytes.fromhex(key1_hex)
 iv = b'\x00' * 16  
 
 # Create output directory
-decrypted_dir = 'decrypted_mb1_firmware'
+decrypted_dir = 'decrypted_mb1'
 os.makedirs(decrypted_dir, exist_ok=True)
 
 # Process all .rcm files
@@ -39,8 +39,10 @@ for filename in os.listdir(rcm_folder):
     cipher1 = AES.new(key1, AES.MODE_CBC, iv=iv)
     decrypted_once = cipher1.decrypt(encrypted_data)
     
-    
-   # Save decrypted result
+    # NV-MEK decryption layer
+
+
+    # Save decrypted result
     with open(os.path.join(decrypted_dir, output_name), 'wb') as f:
-        f.write(decrypted_twice)
+        f.write(decrypted_once)
 print("Decryption completed!")

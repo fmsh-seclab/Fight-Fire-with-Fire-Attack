@@ -30,7 +30,7 @@ function compile_program() {
     echo "POC executable created: $EXEC_NAME"
 }
 
-# Validate tracefile strings ("SBK_FILE" allowed)
+# Validate tracefile strings ("SBK_FILE" or "NV_MEK_FILE" allowed)
 function validate_tracefile() {
     local tracefile="$1"
     case "$tracefile" in
@@ -104,7 +104,7 @@ function main() {
 
     echo "SBK crack successfully!"
     echo "......................................................"
-    echo "Starting decryption RCM Message process..."
+    echo "Starting decryption process..."
     local SCRIPT_DIR
     SCRIPT_DIR=$(dirname "$(readlink -f "$0")")
     "$PYTHON_CMD" "$SCRIPT_DIR/decrypt.py"

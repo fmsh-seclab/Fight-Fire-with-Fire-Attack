@@ -6,8 +6,8 @@
 #include <thrust/device_ptr.h>
 #include <thrust/sort.h>
 
-#define TRACE_FILE_SBK                  "./EM_Trace_SBK_Decryption_Single_Block_Extraction_POI_15.trs"
-#define TRACE_FILE_NV_MEK               "./EM_Trace_NV-MEK_Decryption_Single_Block_Extraction_POI_14.trs"
+#define TRACE_FILE_SBK                  "./em_trace/EM_Trace_SBK_Decryption_Single_Block_Extraction_POI_15.trs"
+#define TRACE_FILE_NV_MEK               "./em_trace/EM_Trace_NV-MEK_Decryption_Single_Block_Extraction_POI_14.trs"
 
 #define NUMBER_OF_TRACE                 120000  // NT = 0x0001D4C0
 #define TRACE_HEAD_LEN                  0x3D    
