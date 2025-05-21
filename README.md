@@ -45,7 +45,7 @@ The `Proof_of_Concept` directory provides all components required to complete th
   
 - Refer to the `README` in `Proof_of_Concept` directory for detailed instructions and dependencies.
   
-- To prevent potential misuse of certain core code components, after completing the NDSS 2026 artifact evaluation process, we will not providing the source code of the GPU-accelerated 32-bit CPA attack implementation. Instead, we will release a compiled binary executable program to researchers.
+- To prevent potential misuse of certain core code components, **after completing the NDSS 2026 artifact evaluation process, we will not providing the source code of the GPU-accelerated 32-bit CPA attack implementation**. Instead, we will release a compiled binary executable program to researchers.
 
 ## License
 All the files within this repository is AGPL-3.0 licensed, as found in the LICENSE file.
