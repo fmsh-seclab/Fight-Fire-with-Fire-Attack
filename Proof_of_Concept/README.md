@@ -24,9 +24,9 @@
 - **`decrypt.py`**: Python script to decrypt the RCM messages with `SBK`.
 
 - **`POC.sh`**: Automates the POC workflow:
-  - 1. Compiles `jetson_32bit_cpa.cu` into an executable `jetson_32bit_cpa`.
-  - 2. Runs the CUDA program `jetson_32bit_cpa` and output `SBK` value to `Result.txt`.
-  - 3. Runs the Python script `decrypt.py` to decrypt the encrypted RCM messages in `rcm_message/` with `SBK` and store to `decrypted_mb1/`.
+  -  Compiles `jetson_32bit_cpa.cu` into an executable `jetson_32bit_cpa`.
+  -  Runs the CUDA program `jetson_32bit_cpa` and output `SBK` value to `Result.txt`.
+  -  Runs the Python script `decrypt.py` to decrypt the encrypted RCM messages in `rcm_message/` with `SBK` and store to `decrypted_mb1/`.
 
 
 ## OS Requirements
