@@ -16,7 +16,7 @@ This repository is structured as follows:
 
 - **`Hardware_Setup`**: Contains the hardware setup guide for the EM acquisition framework, which enables efficient and low-noise EM signal acquisition.
 
-- **`EM_Trace_Acquisition`**: Contains contains a guide for electromagnetic (EM) trace acquisition during the decryption of the MB1 firmware with SBK.
+- **`EM_Trace_Acquisition`**: Contains a guide for electromagnetic (EM) trace acquisition during the decryption of the MB1 firmware with SBK.
 
 - **`Proof_of_Concept`**: Contains all scripts, CUDA source code, and EM trace datasets required to complete the Proof of Concept (PoC) validation.
 
