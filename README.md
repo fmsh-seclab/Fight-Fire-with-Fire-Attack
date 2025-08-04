@@ -35,8 +35,8 @@ The `Proof_of_Concept` directory provides all components required to complete th
   - ✅ Inject noise during AES operations.
 
 - **Long-Term Solutions**
-  - ✅ Add random delay injection in Boot ROM. 
   - ✅ Redesign AES hardware module, Integrate masking or threshold implementation (TI) logic.
+  - ✅ Eliminating the critical risk of single-key reuse by implementing key rolling.
 
 ## Important Notes
 - Our PoC exclusively demonstrates a 100%-confidence-rate recovery of the `Secure Boot Key (SBK)`.
