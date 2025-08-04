@@ -11,7 +11,9 @@ This file describes the hardware modifications and measurement setup necessary t
 
 5. **Oscilloscope**: A Lecroy 625Zi oscilloscope recorded the amplified signals.
 
-6. **Embedded Development Board**: A Jetson-based kit bridges the workstation and TOE, handling USB data relay, SoC reset operations and oscilloscope trigger synchronization.
+6. **Control Device**: A Jetson-based kit bridges the workstation and TOE, handling USB data relay, SoC reset operations and oscilloscope trigger synchronization.
+
+7. **Glitch Generator**: A circuit to support 0.85V power supply to VDD_CORE and glitch generation.
 
 <img src="./image/setup.png" width="800" />
 
@@ -32,5 +34,6 @@ To minimize noise, non-essential components and their associated power ICs were 
 The SOM requires a carrier board for 5V VDD_IN power supply and I/O interface extension. Noise-generating components on the carrier board were removed to further improve SNR:
 - **Remove Non-Essential Components**: Only circuitry critical for basic SOM functions (e.g., USB communication, reset signal control, and RCM mode selection) was retained.
 - **Optimize Power Delivery**: The original 5V power supply (VDD_IN) was replaced with a clean 5V input from an E3631A DC power source to eliminate switching noise.
+
 
 
