@@ -536,7 +536,7 @@ int Rank_Final_Result(int gpu_id, float* values, int* indices)
     fclose(file);
     pthread_mutex_unlock(&file_mutex);
 
-    printf("AES-128 RoundKey Candidate Set %d :\n", gpu_id);
+    printf("AES-128 RoundKey Candidate Set %d :\n", gpu_id+1);
     for(int i=0; i<TOP_K; i++)
     {
         printf("Rank %d: 0x%08X, Vlaue: %f\n", i, (indices[i]), values[i]);
