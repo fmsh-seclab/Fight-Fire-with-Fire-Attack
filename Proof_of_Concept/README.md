@@ -53,22 +53,22 @@ Key Recovery Results as follow:
   ......................................................
   Cracking SBK ... 
   Start Processing 120000 Traces, Please wait about 600 mins.
-  AES-128 RoundKey Candidate Set 0 :
+  AES-128 RoundKey Candidate Set 1 :
   Rank 0: 0x132BA717, Vlaue: 0.169757
   Rank 1: 0x979456BC, Vlaue: 0.143959
   Rank 2: 0x1E806ACC, Vlaue: 0.143207
   Rank 3: 0xAFF064BF, Vlaue: 0.143023
-  AES-128 RoundKey Candidate Set 2 :
+  AES-128 RoundKey Candidate Set 3 :
   Rank 0: 0xF3941DC5, Vlaue: 0.152342
   Rank 1: 0xB0F4AA9D, Vlaue: 0.145041
   Rank 2: 0xC8B09277, Vlaue: 0.144563
   Rank 3: 0x92B78128, Vlaue: 0.144265
-  AES-128 RoundKey Candidate Set 3 :
+  AES-128 RoundKey Candidate Set 4 :
   Rank 0: 0x4D074A7F, Vlaue: 0.180107
   Rank 1: 0x8B78183B, Vlaue: 0.147911
   Rank 2: 0x6682150B, Vlaue: 0.145847
   Rank 3: 0x7C613AA5, Vlaue: 0.144677
-  AES-128 RoundKey Candidate Set 1 :
+  AES-128 RoundKey Candidate Set 2 :
   Rank 0: 0xE311308B, Vlaue: 0.172797
   Rank 1: 0xEF1675EA, Vlaue: 0.144187
   Rank 2: 0xC157D24A, Vlaue: 0.143428
@@ -198,3 +198,4 @@ Each trace record contains three components, structured as:
 Undocumented tags (e.g., `0x49`, `0x4A`) may indicate vendor-specific extensions. Validate against hardware documentation.
 
 ---
+
