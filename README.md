@@ -14,11 +14,11 @@ For details, refer to: <https://www.nvidia.com/en-us/security/acknowledgements/>
 ## Structure Descriptions
 This repository is structured as follows:
 
-- **`Hardware_Setup`**: Contains the hardware setup guide for the evaluation framework, which enables efficient glitch injection and low-noise EM signal acquisition.
+- **`Hardware_Setup/`**: Contains the hardware setup guide for the evaluation framework, which enables efficient glitch injection and low-noise EM signal acquisition.
 
-- **`EM_Trace_Acquisition`**: Contains a guide for electromagnetic (EM) trace acquisition during the decryption of the MB1 firmware with SBK.
+- **`EM_Trace_Acquisition/`**: Contains a guide for electromagnetic (EM) trace acquisition during the decryption of the MB1 firmware with SBK.
 
-- **`Proof_of_Concept`**: Contains all scripts, CUDA source code, and EM trace datasets required to complete the Proof of Concept (PoC) validation.
+- **`Proof_of_Concept/`**: Contains all scripts, CUDA source code, and EM trace datasets required to complete the Proof of Concept (PoC) validation.
 
 ## Reproduction Instructions
 Since side-channel attacks (SCA) rely on sophisticated hardware equipment, please carefully review the contents in the `EM_Trace_Acquisition` and `Hardware_Setup` folders before attempting reproduction.
