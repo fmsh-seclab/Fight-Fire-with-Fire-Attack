@@ -17,6 +17,8 @@ This file describes the hardware modifications and measurement setup necessary t
 
 <img src="./image/setup.png" width="800" />
 
+<img src="./image/Realworld_setup.jpg" width="800" />
+
 ## Hardware Modifications for Low-Noise System
 To minimize noise, non-essential components and their associated power ICs were removed. The following steps were taken:
 - **Disable DRAM**: The power ICs (marked in yellow in Figure below) supplying 0.6V and 1.8V to the DRAM were removed.
@@ -34,6 +36,7 @@ To minimize noise, non-essential components and their associated power ICs were 
 The SOM requires a carrier board for 5V VDD_IN power supply and I/O interface extension. Noise-generating components on the carrier board were removed to further improve SNR:
 - **Remove Non-Essential Components**: Only circuitry critical for basic SOM functions (e.g., USB communication, reset signal control, and RCM mode selection) was retained.
 - **Optimize Power Delivery**: The original 5V power supply (VDD_IN) was replaced with a clean 5V input from an E3631A DC power source to eliminate switching noise.
+
 
 
 
