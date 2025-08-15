@@ -295,12 +295,6 @@ int Init_TraceSample_and_CipherText(const char* TraceFileName, unsigned char** T
             h_CipherText[4*i + 3] = ((TraceFileBuffer[index+12]&0xFF)<<24) | ((TraceFileBuffer[index+13]&0xFF)<<16) |
                                     ((TraceFileBuffer[index+14]&0xFF)<<8)  | ((TraceFileBuffer[index+15]&0xFF));
         }
-        /*
-        if(i==0 | i==1)
-        {
-            printf("Trace %d : CipherText = %x %x %x %x, Sample = %d \n", i, h_CipherText[4*i + 0], h_CipherText[4*i + 1], h_CipherText[4*i + 2], h_CipherText[4*i + 3], h_TraceSample[i]);
-        }
-        */
     }
 
 	Status = cudaMalloc((void**)TraceSample, Sample_Size);
